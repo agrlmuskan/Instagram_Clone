@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src ="index.js"></script>
+        <title> Instagram-Clone </title>
+    </head>
+    <body>
+        <main>
+            <header class="header" >
+                <h1>Instagram Users </h1>
+            </header>
+            
+            <div class="container">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Choose a User</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">Users</label>
+                                    <select class="form-control"  name="interviewer-name" id="interviewer-name">
+                                    </select>
+                                    <br>
+                                    <button id="submit-btn" class="btn btn-primary" onclick = "document.getElementById(show).style.display = 'block' ">Submit</button>
+                                </div>
+                            </div>
+                            <div id = "show" class = "col-md-6">
+                                <div class="form-group">
+                                    <div class = "row">
+                                        <div class = "column"> <b>Followers</b></div>
+                                        <div class = "column" > <b>Followings</b> </div>
+                                        <div class = "column"> <b>Suggestions</b></div>
+                                    </div>
+                                    <div class = "row">
+                                        <div id = "1" class = "column" onclick = "Number_of_Followers(1)"> <b></b></div>
+                                        <div id = "2" class = "column" onclick = "Number_of_Followings(2)"> <b></b> </div>
+                                        <div id = "3" class = "column" onclick = "Number_of_Suggestions(3)"> <b></b></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p style= "display:none" id = "Follower">hi </p>
+                <p style= "display:none" id = "Following">hola</p>
+                <p style= "display:none" id = "suggest">helo</p>
+            </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    </body>
+    </html>
+    </body>
+</html>
